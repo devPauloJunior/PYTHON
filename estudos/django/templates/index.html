@@ -101,8 +101,8 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="receita.html">Receitas</a></li>
+                                    <li><a href="{% url 'index'%}">Home</a></li>
+                                    <li><a href="{% url 'receita'%}">Receitas</a></li>
                                 </ul>
 
                                 <!-- Formulario de busca -->
@@ -130,7 +130,7 @@
                     <div class="single-best-receipe-area mb-30">
                         <img src="{% static 'img/bg-img/foto_receita.png'%}" alt="">
                         <div class="receipe-content">
-                            <a href="receita.html">
+                            <a href="{% url 'receita'%}">
                                 <h5>Nome da receita</h5>
                             </a>
                         </div>
@@ -142,7 +142,7 @@
                     <div class="single-best-receipe-area mb-30">
                         <img src="{% static 'img/bg-img/foto_receita.png'%}" alt="">
                         <div class="receipe-content">
-                            <a href="receita.html">
+                            <a href="{% url 'receita'%}">
                                 <h5>Nome da receita</h5>
                             </a>
                         </div>
@@ -154,7 +154,7 @@
                     <div class="single-best-receipe-area mb-30">
                         <img src="{% static 'img/bg-img/foto_receita.png'%}" alt="">
                         <div class="receipe-content">
-                            <a href="receita.html">
+                            <a href="{% url 'receita'%}">
                                 <h5>Nome da receita</h5>
                             </a>
                         </div>
@@ -178,7 +178,7 @@
                     </div>
                     <!-- Footer Logo -->
                     <div class="footer-logo">
-                        <a href="index.html"><img src="{% static 'img/core-img/logo.png'%}" alt=""></a>
+                        <a href="{% url 'index'%}"><img src="{% static 'img/core-img/logo.png'%}" alt=""></a>
                     </div>
                 </div>
             </div>
