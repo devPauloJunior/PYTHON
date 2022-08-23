@@ -51,7 +51,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="receipe-slider owl-carousel">
+                        {% if receita.foto_receita == '' %}
                         <img src="{% static 'img/bg-img/tomate_banner.jpg'%}">
+                        {% else %}
+                        <img src="{{ receita.foto_receita.url }}">
+                        {% endif %}
                     </div>
                 </div>
             </div>
