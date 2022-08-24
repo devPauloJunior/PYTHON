@@ -7,24 +7,8 @@
         <img src="{% static 'img/core-img/hamburger.png'%}" alt="">
     </div>
 
-    <!-- Search Wrapper -->
-    <div class="search-wrapper">
-        <!-- Close Btn -->
-        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <form action="{% url 'buscar' %}">
-                        <input type="text" name="buscar" placeholder="O que está procurando...">
-                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% include 'partials/menu.html' %}
+    {% include 'partials/_busca.html' %}
+    {% include 'partials/_menu.html' %}
 
         <!-- Receipe Post Search -->
         <div class="receipe-post-search mb-80">
@@ -100,24 +84,6 @@
                 </div>
                 <!-- Ingredientes -->
 
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
-                        <!-- Footer Social Info -->
-                        <div class="footer-social-info text-right">
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="{% url 'index' %}"><img src="{% static 'img/core-img/logo.png'%}" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- ##### Footer Area Start ##### -->
+{% include 'partials/_footer.html' %}
 
 {%endblock%}
