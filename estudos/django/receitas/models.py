@@ -14,3 +14,5 @@ class Receita(models.Model):
     data_criacao = models.DateTimeField(auto_now_add=True)
     foto_receita = models.ImageField(upload_to='fotos/%d/%m/%Y/', blank=True)
     publicada = models.BooleanField(default=False)
+    def __str__(self):
+        return self.nome_receita    
