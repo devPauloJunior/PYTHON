@@ -1,10 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 def cadastro(request):
-    pass
+    if request.method == 'POST':
+        print('usuario OK')
+        return redirect('login')
+    else:
+        return render(request, 'usuarios/cadastro.html')
 
 def login(request):
-    pass
+    return render(request, 'usuarios/login.html')
 
 def logout(request):
     pass
