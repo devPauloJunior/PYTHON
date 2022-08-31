@@ -3,7 +3,7 @@ from escola.models import Aluno, Curso
 
 class AlunoSerializer(serializers.ModelSerializer):
     class Meta:
-        mmodel = Aluno
+        model = Aluno
         fields = ['id', 'nome', 'rg', 'cpf', 'data_nascimento']
 
 class CursoSerializer(serializers.ModelSerializer):
