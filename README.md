@@ -17,5 +17,4 @@ Estes códigos são abertos para livre utilização e estudo
 ---
 ## Desenvolvedor
 
-[<img src="https://avatars.githubusercontent.com/u/105656681?s=400&u=24f8717c123188c79cf3373aa1859fba18b51c7b&v=4" width=115><br>
-| <sub>Paulo Júnior</sub>](https://github.com/devPauloJunior) |
+[<img src="https://avatars.githubusercontent.com/u/105656681?s=400&u=24f8717c123188c79cf3373aa1859fba18b51c7b&v=4" width=115><br><sub>Paulo Júnior</sub>](https://github.com/devPauloJunior)
