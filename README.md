@@ -11,11 +11,10 @@ Estes códigos são abertos para livre utilização e estudo
 ## 🎁 Expresso minha gratidão:
 
 * Minha Esposa e Família ❤️;
-* Agradeço a todos meus alinos que me incentivam a melhorar sempre 🫂;
+* Agradeço a todos meus alunos, que me incentivam a melhorar sempre 🫂;
 * E peço que contem a outras pessoas sobre meus códigos 📢;
 
 ---
 ## Desenvolvedor
 
 | [<img src="https://avatars.githubusercontent.com/u/105656681?s=400&u=24f8717c123188c79cf3373aa1859fba18b51c7b&v=4" width=115><br><sub>Paulo Júnior</sub>](https://github.com/devPauloJunior) |
-| :---: | :---: 
