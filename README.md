@@ -1,3 +1,5 @@
+![Logo Devzado Clara - Mini](https://user-images.githubusercontent.com/105656681/197564791-4b3a595b-5371-49df-aef4-7969b02c7146.png)
+
 # Códigos escritos em PYTHON
 
 ## 🚀 O que temos:
