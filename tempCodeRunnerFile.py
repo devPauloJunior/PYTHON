@@ -1,1 +1,1 @@
-600
+escolha_seu_jogo()
