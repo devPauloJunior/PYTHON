@@ -28,7 +28,7 @@ while count < 10:
     count = count + 1
     print("B")
 print("C")
-"""
+
 from fractions import Fraction
 def double(x):
     return x * 2
@@ -42,3 +42,15 @@ class InitClass(object):
         print('Executing the __init__ method.') 
   
 ic = InitClass()
+"""
+
+n=int(input("digite: "))
+s=[1,0]
+i=1
+while i <= n:
+    s.append(s[i]+s[i-1])
+
+if n in s:
+    print("OK")
+else:
+    print("NÃO OK")
