@@ -47,10 +47,16 @@ ic = InitClass()
 n=int(input("digite: "))
 s=[1,0]
 i=1
+valida = False
 while i <= n:
     s.append(s[i]+s[i-1])
+    i += 1
+    if n in s:
+        valida = True
+        print("OK")
+        break
 
-if n in s:
-    print("OK")
-else:
-    print("NÃO OK")
+if valida == False:
+    print(n, " NÃO É OK")
+
+print(s)
