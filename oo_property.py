@@ -1,57 +1,40 @@
-# class Animal():
-#     def __init__(self, nome, peso):
-#         self._nome = nome
-#         self.peso = peso
-
-#     def imprimir(self):
-#         print("Meu nome é ", self._nome)
-#         print("Meu peso é: ", self.peso)    
-    
-#     def alimentar(self, comida):
-#         self.peso += comida
-
-#     @property
-#     def nome(self):
-#         print("metodo getter foi chamado")
-#         return self._nome
-
-#     @nome.setter
-#     def nome(self, new_name):
-#         print("metodo setter foi chamado")
-#         if type(new_name)==type(str()):
-#             self._nome = new_name
-#         else:
-#             print("Nome deve ser uma string")
-
-
 class Felino():
-    def __init__(self, cor_do_pelo, juba):
-        self.cor_do_pelo = cor_do_pelo
-        self.juba = False
-        self.fome = 0
+    cor_do_pelo = ''
+    juba = False
 
     def imprimir(self):
-        print("Meu nome é: ", self._nome)
-        print("")
-        if self.fome >= 50:
-            print("Minha fome está pouca: ", self.fome)
+        print("Meu nome é: ", self.nome)
+        print("Meu pelo é: ", self.cor_do_pelo)
+        if self.juba == False:
+            print("Eu não tenho juba!")
         else:
-            print("Muita fome me alimente: ", self.fome)
-
-        print("Meu pelo tem a cor: ", self.cor_do_pelo)
-    
-    def alimentar(self, quantidade_de_comida):
-        self.fome += quantidade_de_comida
+            print("Eu tenho juba!!!")
+        if self.fome >= 50:
+            print("Estou com pouca fome")
+        else:
+            print("Estou com fome!!!")
 
     def get_nome(self):
-        print("metodo getter foi chamado")
-        return self._nome
+        print("Entrou no metodo GETTER")
+        return self.__nome
 
-    def set_nome(self, new_name):
-        print("metodo setter foi chamado")
-        if type(new_name)==type(str()):
-            self._nome = new_name
+    def set_nome(self, novo_nome):
+        print("Entrou no metodo SETTER")
+        if type(novo_nome) == type(str()):
+            self.__nome = novo_nome
         else:
-            print("Nome deve ser uma string")
+            print("Nome deve ser uma STRING!")
+
+    def get_fome(self):
+        print("Entrou no metodo GETTER!")
+        return self._fome
+    
+    def set_fome(self, comida):
+        print("Entrou no metodo SETTER!")
+        if type(comida) == type(int()):
+            self._fome = comida
+        else:
+            print("Comida deve ser um numero inteiro")
 
     nome = property(get_nome, set_nome)
+    fome = property(get_fome, set_fome)

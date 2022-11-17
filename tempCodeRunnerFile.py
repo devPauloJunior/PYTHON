@@ -1,1 +1,1 @@
-escolha_seu_jogo()
+set_nome
