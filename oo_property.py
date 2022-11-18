@@ -1,10 +1,11 @@
 class Felino():
-    cor_do_pelo = ''
-    juba = False
+    def __init__(self, idade, juba):
+        self.__idade = 0
+        self.juba = juba
 
     def imprimir(self):
         print("Meu nome é: ", self.nome)
-        print("Meu pelo é: ", self.cor_do_pelo)
+        print("Minha idade é: ", self.idade)
         if self.juba == False:
             print("Eu não tenho juba!")
         else:
@@ -36,5 +37,21 @@ class Felino():
         else:
             print("Comida deve ser um numero inteiro")
 
-    nome = property(get_nome, set_nome)
+    @property
+    def idade(self):
+        print("Entrou no metodo GETTER!")
+        return self.__idade
+
+    @idade.setter
+    def idade(self, nova_idade):
+        print("Entrou no metodo SETTER!")
+        if type(nova_idade) == type(int()):
+            self.__idade = nova_idade
+        else:
+            print("Idade deve ser um numero inteiro")
+
+    # nome = property(get_nome, set_nome)
     fome = property(get_fome, set_fome)
+    nome = property()
+    nome = nome.getter(get_nome)
+    nome = nome.setter(set_nome)
