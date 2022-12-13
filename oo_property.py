@@ -15,6 +15,19 @@ class Felino():
         else:
             print("Estou com fome!!!")
 
+    @property
+    def idade(self):
+        print("Entrou no metodo GETTER!")
+        return self.__idade
+
+    @idade.setter
+    def idade(self, nova_idade):
+        print("Entrou no metodo SETTER!")
+        if type(nova_idade) == type(int()):
+            self.__idade = nova_idade
+        else:
+            print("Idade deve ser um numero inteiro")
+
     def get_nome(self):
         print("Entrou no metodo GETTER")
         return self.__nome
@@ -33,19 +46,6 @@ class Felino():
     def set_fome(self, comida):
         self._fome = comida
        
-    @property
-    def idade(self):
-        print("Entrou no metodo GETTER!")
-        return self.__idade
-
-    @idade.setter
-    def idade(self, nova_idade):
-        print("Entrou no metodo SETTER!")
-        if type(nova_idade) == type(int()):
-            self.__idade = nova_idade
-        else:
-            print("Idade deve ser um numero inteiro")
-
     # nome = property(get_nome, set_nome)
     fome = property(get_fome, set_fome)
     nome = property()
