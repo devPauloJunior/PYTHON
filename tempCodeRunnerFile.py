@@ -1,1 +1,1 @@
-candidato
+print(x)
