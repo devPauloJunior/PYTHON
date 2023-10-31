@@ -1,0 +1,8 @@
+paulo:1
+jose:10
+maria:5
+raimundo:3
+alberto:9
+joana:4
+ana:7
+beatriz:10

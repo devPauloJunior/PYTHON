@@ -1,1 +1,1 @@
-print(x)
+nova_tupla = tuple(nova_linha)
