@@ -1,4 +1,4 @@
-# Fatiamento de strings
+# TODO: Fatiamento de strings
 # Obs: toda string por padrão é ima lista que não saiu do armário
 # ordem de tratamento
 # 0123456.......
