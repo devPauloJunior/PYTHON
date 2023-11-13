@@ -3,6 +3,8 @@
 # append - metodo que insere itens no final da lista
 # del - remove pelo indice especifico da lista
 # remove - remove um objeto especificado da lista
+# pop - remove o ultimo objeto da lista
+# insert - adiciona um obejto no inicio da lista
 '''
 lista = []
 print(lista, type(lista))
@@ -38,4 +40,16 @@ print(lista)
 del lista[-2]
 print(lista)
 lista.remove('back')
+lista.append(26)
+lista.append(57)
+lista.append(900)
+print(lista)
+valor_do_pop = lista.pop()
+print(lista)
+print(f' foi removido da lista o cliente de id : {valor_do_pop}')
+lista.insert(0, 'Amontada Valley')
+print(lista)
+lista.insert(2, 'Professor')
+print(lista)
+lista.insert(200, 'Aluna')
 print(lista)
