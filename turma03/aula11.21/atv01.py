@@ -1,4 +1,6 @@
 # Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.
+import atv02
+
 contador_par = 0
 contador_impar = 0
 for i in range(1, 11):
@@ -10,4 +12,6 @@ for i in range(1, 11):
 
 print(f'A quantidade de numeros pares é: { contador_par}')
 print(f'A quantidade de numeros impares é: { contador_impar }')
+
+print(atv02.maior)
     
