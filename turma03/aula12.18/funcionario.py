@@ -3,14 +3,13 @@
 class Funcionarios:
     def __init__(self, nome, salario):
         self.nome = nome
-        self.salario = 0.0
+        self.salario = salario
     
     def get_nome(self):
         return self.nome 
     
     def get_salario(self):
         return self.salario
-    
     
     
 class Gerente(Funcionarios):
