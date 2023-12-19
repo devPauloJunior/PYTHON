@@ -12,6 +12,7 @@ class Cafeteira:
         self.ligada = False
         self.compartimento_agua = False
         self.compartimento_filtro = False
+        self.cafe_pronto = False
         print('Cafeteira Desligada')
 
     def colocar_agua(self):
