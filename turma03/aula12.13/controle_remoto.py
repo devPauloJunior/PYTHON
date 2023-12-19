@@ -23,7 +23,7 @@ class ControleRemoto:
     def get_temperatura(self):
         return self.temperatura
     
-    def precionar_botao(self, tipo_de_botao):
+    def pressionar_botao(self, tipo_de_botao):
         self.botao = tipo_de_botao
         if self.botao == 'Ligar' and self.temperatura == 0:
             print('Ar está ligado')
@@ -35,14 +35,14 @@ class ControleRemoto:
 
 controle = ControleRemoto('branca', 'elgin', 2)
 
-controle.precionar_botao('Ligar')
+controle.pressionar_botao('Ligar')
 
 controle.set_temperatura(20)
 
 print(controle.get_temperatura())
 
-controle.precionar_botao('Desligar')
+controle.pressionar_botao('Desligar')
 
-controle.set_temperatura(20)
+controle.set_temperatura(18)
 
 print(controle.get_temperatura())
