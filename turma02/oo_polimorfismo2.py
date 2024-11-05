@@ -1,4 +1,4 @@
-class Formas_Geometricas():
+class FormasGeometricas():
     def __init__(self, base, altura):
         self.base = base
         self.altura = altura
@@ -13,7 +13,7 @@ class Formas_Geometricas():
     def __str__(self):
         return f'A area deste {self.__class__.__name__} é {self.get_area()}'
 
-class Retangulo(Formas_Geometricas):
+class Retangulo(FormasGeometricas):
     def __init__(self, base, altura):
         super().__init__(base, altura)
 
@@ -24,7 +24,7 @@ class Retangulo(Formas_Geometricas):
         return f'A area deste {self.__class__.__name__} é {self.get_area()}'
 
 
-class Triangulo(Formas_Geometricas):
+class Triangulo(FormasGeometricas):
     def __init__(self, base, altura):
         super().__init__(base, altura)
 
@@ -37,7 +37,7 @@ class Triangulo(Formas_Geometricas):
 retangulo = Retangulo(10, 6)
 print(retangulo.__str__())
 print("="*20)
-retangulo2 = Formas_Geometricas(15, 7)
+retangulo2 = FormasGeometricas(15, 7)
 print(retangulo2.__str__())
 print("="*20)
 triangulo = Triangulo(5, 9)

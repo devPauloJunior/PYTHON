@@ -13,7 +13,7 @@ class ValidaCPF():
 
     def cpf_valido(self, numero_cpf):
         padrao_cpf = re.compile('[0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}')
-        if len(numero_cpf) == 11 and numero_cpf == padra_cpf:
+        if len(numero_cpf) == 11 and numero_cpf == padrao_cpf:
             return True
         else:
             return False
